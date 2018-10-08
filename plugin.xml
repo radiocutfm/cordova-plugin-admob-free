@@ -14,6 +14,7 @@
     <repo>https://github.com/ratson/cordova-plugin-admob-free.git</repo>
     <issue>https://github.com/ratson/cordova-plugin-admob-free/issues</issue>
 
+    <preference name="ADMOB_APP_ID" default=""/>
     <engines>
         <engine name="cordova" version=">=4.0" />
     </engines>
@@ -29,7 +30,6 @@
     <dependency id="cordova-admob-sdk" version="~0.20.0" />
 
     <platform name="android">
-        <preference name="ADMOB_APP_ID" default=""/>
 
         <config-file parent="/manifest/application" target="AndroidManifest.xml">
             <activity android:name="com.google.android.gms.ads.AdActivity"
